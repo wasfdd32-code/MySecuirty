@@ -34,5 +34,6 @@ async def on_guild_channel_delete(channel):
                 await user.ban(reason="محاولة تخريب: حذف قناة")
                 print(f"🚫 تم حظر {user.name} لمحاولته حذف قناة.")
 
-# ضع التوكن هنا أو استخدم متغيرات البيئة
-bot.run('YOUR_SECURITY_BOT_TOKEN')
+import os
+# ... بقية الكود الخاص بك ...
+bot.run(os.environ['TOKEN'])
